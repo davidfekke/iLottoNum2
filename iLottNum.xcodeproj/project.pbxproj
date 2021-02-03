@@ -38,9 +38,9 @@
 		B27A2E9725C79A610009C7C8 /* iLottNum2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLottNum2App.swift; sourceTree = "<group>"; };
 		B27A2E9825C79A610009C7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B27A2E9925C79A630009C7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B27A2E9E25C79A630009C7C8 /* iLottNum2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27A2E9E25C79A630009C7C8 /* iLottNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A2EA125C79A630009C7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B27A2EA625C79A630009C7C8 /* iLottNum2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27A2EA625C79A630009C7C8 /* iLottNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A2EA825C79A630009C7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27A2EA925C79A630009C7C8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		B27A2EAE25C79A630009C7C8 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,8 +108,8 @@
 		B27A2E9F25C79A630009C7C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B27A2E9E25C79A630009C7C8 /* iLottNum2.app */,
-				B27A2EA625C79A630009C7C8 /* iLottNum2.app */,
+				B27A2E9E25C79A630009C7C8 /* iLottNum.app */,
+				B27A2EA625C79A630009C7C8 /* iLottNum.app */,
 				B27A2EAE25C79A630009C7C8 /* Tests iOS.xctest */,
 				B27A2EB925C79A630009C7C8 /* Tests macOS.xctest */,
 			);
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B27A2E9D25C79A630009C7C8 /* iLottNum2 (iOS) */ = {
+		B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum2 (iOS)" */;
+			buildConfigurationList = B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (iOS)" */;
 			buildPhases = (
 				B27A2E9A25C79A630009C7C8 /* Sources */,
 				B27A2E9B25C79A630009C7C8 /* Frameworks */,
@@ -166,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = "iLottNum2 (iOS)";
+			name = "iLottNum (iOS)";
 			productName = "iLottNum2 (iOS)";
-			productReference = B27A2E9E25C79A630009C7C8 /* iLottNum2.app */;
+			productReference = B27A2E9E25C79A630009C7C8 /* iLottNum.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B27A2EA525C79A630009C7C8 /* iLottNum2 (macOS) */ = {
+		B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum2 (macOS)" */;
+			buildConfigurationList = B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (macOS)" */;
 			buildPhases = (
 				B27A2EA225C79A630009C7C8 /* Sources */,
 				B27A2EA325C79A630009C7C8 /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = "iLottNum2 (macOS)";
+			name = "iLottNum (macOS)";
 			productName = "iLottNum2 (macOS)";
-			productReference = B27A2EA625C79A630009C7C8 /* iLottNum2.app */;
+			productReference = B27A2EA625C79A630009C7C8 /* iLottNum.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B27A2EAD25C79A630009C7C8 /* Tests iOS */ = {
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum2" */;
+			buildConfigurationList = B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,8 +262,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B27A2E9D25C79A630009C7C8 /* iLottNum2 (iOS) */,
-				B27A2EA525C79A630009C7C8 /* iLottNum2 (macOS) */,
+				B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */,
+				B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */,
 				B27A2EAD25C79A630009C7C8 /* Tests iOS */,
 				B27A2EB825C79A630009C7C8 /* Tests macOS */,
 			);
@@ -343,12 +343,12 @@
 /* Begin PBXTargetDependency section */
 		B27A2EB025C79A630009C7C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B27A2E9D25C79A630009C7C8 /* iLottNum2 (iOS) */;
+			target = B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */;
 			targetProxy = B27A2EAF25C79A630009C7C8 /* PBXContainerItemProxy */;
 		};
 		B27A2EBB25C79A630009C7C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B27A2EA525C79A630009C7C8 /* iLottNum2 (macOS) */;
+			target = B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */;
 			targetProxy = B27A2EBA25C79A630009C7C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -471,16 +471,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum2;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.ilottonumpaid;
+				PRODUCT_NAME = iLottNum;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,16 +495,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum2;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.ilottonumpaid;
+				PRODUCT_NAME = iLottNum;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +532,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum2;
+				PRODUCT_NAME = iLottNum;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -552,7 +556,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum2;
+				PRODUCT_NAME = iLottNum;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -650,7 +654,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum2" */ = {
+		B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2EC625C79A630009C7C8 /* Debug */,
@@ -659,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum2 (iOS)" */ = {
+		B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2EC925C79A630009C7C8 /* Debug */,
@@ -668,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum2 (macOS)" */ = {
+		B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2ECC25C79A630009C7C8 /* Debug */,
