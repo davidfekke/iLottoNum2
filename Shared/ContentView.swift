@@ -40,25 +40,51 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             
-            TextField("Start Number", text: $startNumStr)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .keyboardType(.decimalPad)
-                //.colorScheme(.light)
-                .onTapGesture {
-                    if Float(truncating: self.startNumber) == 0 {
-                        self.startNumStr = ""
+            #if os(iOS) || os(watchOS) || os(tvOS)
+                TextField("Start Number", text: $startNumStr)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                    .colorScheme(.light)
+                    .onTapGesture {
+                        if Float(truncating: self.startNumber) == 0 {
+                            self.startNumStr = ""
+                        }
                     }
-                }
+                
+                TextField("End Number", text: $endNumStr)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                    .colorScheme(.light)
+                    .onTapGesture {
+                        if Float(truncating: self.endNumber) == 0 {
+                            self.endNumStr = ""
+                        }
+                    }
+            #elseif os(macOS)
+                TextField("Start Number", text: $startNumStr)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    //.keyboardType(.decimalPad)
+                    //.colorScheme(.light)
+                    .onTapGesture {
+                        if Float(truncating: self.startNumber) == 0 {
+                            self.startNumStr = ""
+                        }
+                    }
+                
+                TextField("End Number", text: $endNumStr)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    //.keyboardType(.decimalPad)
+                    //.colorScheme(.light)
+                    .onTapGesture {
+                        if Float(truncating: self.endNumber) == 0 {
+                            self.endNumStr = ""
+                        }
+                    }
+            #else
+                print("OMG, it's that mythical new Apple product!!!")
+            #endif
             
-            TextField("End Number", text: $endNumStr)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .keyboardType(.decimalPad)
-                //.colorScheme(.light)
-                .onTapGesture {
-                    if Float(truncating: self.endNumber) == 0 {
-                        self.endNumStr = ""
-                    }
-                }
+            
             
             Button(action: calculateRandomNumber, label: {
                 Spacer()
@@ -92,7 +118,9 @@ struct ContentView: View {
         }.padding()
         .background(Image("lottoBackground").resizable().scaledToFill())
         .onTapGesture {
+            #if os(iOS) || os(watchOS) || os(tvOS)
             self.endEditing()
+            #endif
         }
         
     }
@@ -117,12 +145,17 @@ struct ContentView: View {
             winner = -1
         }
         
-        endEditing()
+        #if os(iOS) || os(watchOS) || os(tvOS)
+            endEditing()
+        #endif
     }
     
+    #if os(iOS) || os(watchOS) || os(tvOS)
     private func endEditing() {
         UIApplication.shared.endEditing()
     }
+    #endif
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -131,8 +164,11 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+#if os(iOS) || os(watchOS) || os(tvOS)
 extension UIApplication {
     func endEditing() {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
+#endif
+
