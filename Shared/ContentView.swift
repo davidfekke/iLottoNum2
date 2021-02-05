@@ -126,23 +126,32 @@ struct ContentView: View {
     }
     
     private func calculateRandomNumber() {
-        let start = Int(truncating: startNumber)
-        let end = Int(truncating: endNumber)
         
-        if end <= start {
-            warning = "The Start number must be lower than the End number"
-            return
-        } else {
-            warning = ""
-        }
+        let isStartNumANum = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: startNumStr))
+        let isEndNumANum = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: endNumStr))
         
-        if randArray.count == 0 {
-            randArray = Array(start...end).shuffled()
-        }
-        if let result = randArray.popLast() {
-            winner = result
+        if startNumStr == "" || endNumStr == "" || !isStartNumANum || !isEndNumANum  {
+            warning = "Please make sure to assign a number value to both the Start number and End number"
         } else {
-            winner = -1
+            
+            let start = Int(truncating: startNumber)
+            let end = Int(truncating: endNumber)
+            
+            if end <= start {
+                warning = "The Start number must be lower than the End number"
+                return
+            } else {
+                warning = ""
+            }
+            
+            if randArray.count == 0 {
+                randArray = Array(start...end).shuffled()
+            }
+            if let result = randArray.popLast() {
+                winner = result
+            } else {
+                winner = -1
+            }
         }
         
         #if os(iOS) || os(watchOS) || os(tvOS)
