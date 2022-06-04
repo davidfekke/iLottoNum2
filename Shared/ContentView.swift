@@ -88,11 +88,12 @@ struct ContentView: View {
             
             Button(action: calculateRandomNumber, label: {
                 Spacer()
-                Text("Calculate Button")
+                Text("Generate Number")
                     .font(.title)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
+                    .padding()
                 Spacer()
             }).background(Color.green)
                 .cornerRadius(8.0)

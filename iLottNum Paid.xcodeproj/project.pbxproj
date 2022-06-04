@@ -15,6 +15,16 @@
 		B27A2EC325C79A630009C7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A2E9825C79A610009C7C8 /* ContentView.swift */; };
 		B27A2EC425C79A630009C7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27A2E9925C79A630009C7C8 /* Assets.xcassets */; };
 		B27A2EC525C79A630009C7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27A2E9925C79A630009C7C8 /* Assets.xcassets */; };
+		B27DDFDD284BF27D0084798D /* iLottoNum WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B27DDFDC284BF27D0084798D /* iLottoNum WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B27DDFE2284BF27E0084798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27DDFE1284BF27E0084798D /* Assets.xcassets */; };
+		B27DDFE8284BF27E0084798D /* iLottoNum WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B27DDFE7284BF27E0084798D /* iLottoNum WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B27DDFED284BF27E0084798D /* iLottNumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDFEC284BF27E0084798D /* iLottNumApp.swift */; };
+		B27DDFEF284BF27E0084798D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDFEE284BF27E0084798D /* ContentView.swift */; };
+		B27DDFF1284BF27E0084798D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDFF0284BF27E0084798D /* NotificationController.swift */; };
+		B27DDFF3284BF27E0084798D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDFF2284BF27E0084798D /* NotificationView.swift */; };
+		B27DDFF5284BF27E0084798D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DDFF4284BF27E0084798D /* ComplicationController.swift */; };
+		B27DDFF7284BF27F0084798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27DDFF6284BF27F0084798D /* Assets.xcassets */; };
+		B27DDFFA284BF27F0084798D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27DDFF9284BF27F0084798D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +42,54 @@
 			remoteGlobalIDString = B27A2EA525C79A630009C7C8;
 			remoteInfo = "iLottNum2 (macOS)";
 		};
+		B27DDFDE284BF27D0084798D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B27A2E9225C79A600009C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B27DDFDB284BF27D0084798D;
+			remoteInfo = "iLottoNum WatchKit App";
+		};
+		B27DDFE9284BF27E0084798D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B27A2E9225C79A600009C7C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B27DDFE6284BF27E0084798D;
+			remoteInfo = "iLottoNum WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B27DDFFF284BF27F0084798D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B27DDFDD284BF27D0084798D /* iLottoNum WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27DE002284BF27F0084798D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B27DDFE8284BF27E0084798D /* iLottoNum WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B27A2E9725C79A610009C7C8 /* iLottNum2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLottNum2App.swift; sourceTree = "<group>"; };
 		B27A2E9825C79A610009C7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B27A2E9925C79A630009C7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B27A2E9E25C79A630009C7C8 /* iLottNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27A2E9E25C79A630009C7C8 /* iLottNum Paid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iLottNum Paid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A2EA125C79A630009C7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B27A2EA625C79A630009C7C8 /* iLottNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27A2EA625C79A630009C7C8 /* iLottNum Paid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iLottNum Paid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A2EA825C79A630009C7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27A2EA925C79A630009C7C8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		B27A2EAE25C79A630009C7C8 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +98,19 @@
 		B27A2EB925C79A630009C7C8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A2EBD25C79A630009C7C8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B27A2EBF25C79A630009C7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27DDFD9284BF27D0084798D /* iLottoNum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLottoNum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27DDFDC284BF27D0084798D /* iLottoNum WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iLottoNum WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27DDFE1284BF27E0084798D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B27DDFE7284BF27E0084798D /* iLottoNum WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iLottoNum WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27DDFEC284BF27E0084798D /* iLottNumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLottNumApp.swift; sourceTree = "<group>"; };
+		B27DDFEE284BF27E0084798D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B27DDFF0284BF27E0084798D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B27DDFF2284BF27E0084798D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B27DDFF4284BF27E0084798D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B27DDFF6284BF27F0084798D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B27DDFF9284BF27F0084798D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B27DDFFB284BF27F0084798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27DDFFC284BF27F0084798D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +142,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27DDFE4284BF27E0084798D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +160,8 @@
 				B27A2EA725C79A630009C7C8 /* macOS */,
 				B27A2EB125C79A630009C7C8 /* Tests iOS */,
 				B27A2EBC25C79A630009C7C8 /* Tests macOS */,
+				B27DDFE0284BF27D0084798D /* iLottoNum WatchKit App */,
+				B27DDFEB284BF27E0084798D /* iLottoNum WatchKit Extension */,
 				B27A2E9F25C79A630009C7C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,10 +179,13 @@
 		B27A2E9F25C79A630009C7C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B27A2E9E25C79A630009C7C8 /* iLottNum.app */,
-				B27A2EA625C79A630009C7C8 /* iLottNum.app */,
+				B27A2E9E25C79A630009C7C8 /* iLottNum Paid.app */,
+				B27A2EA625C79A630009C7C8 /* iLottNum Paid.app */,
 				B27A2EAE25C79A630009C7C8 /* Tests iOS.xctest */,
 				B27A2EB925C79A630009C7C8 /* Tests macOS.xctest */,
+				B27DDFD9284BF27D0084798D /* iLottoNum.app */,
+				B27DDFDC284BF27D0084798D /* iLottoNum WatchKit App.app */,
+				B27DDFE7284BF27E0084798D /* iLottoNum WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,12 +225,44 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		B27DDFE0284BF27D0084798D /* iLottoNum WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B27DDFE1284BF27E0084798D /* Assets.xcassets */,
+			);
+			path = "iLottoNum WatchKit App";
+			sourceTree = "<group>";
+		};
+		B27DDFEB284BF27E0084798D /* iLottoNum WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B27DDFEC284BF27E0084798D /* iLottNumApp.swift */,
+				B27DDFEE284BF27E0084798D /* ContentView.swift */,
+				B27DDFF0284BF27E0084798D /* NotificationController.swift */,
+				B27DDFF2284BF27E0084798D /* NotificationView.swift */,
+				B27DDFF4284BF27E0084798D /* ComplicationController.swift */,
+				B27DDFF6284BF27F0084798D /* Assets.xcassets */,
+				B27DDFFB284BF27F0084798D /* Info.plist */,
+				B27DDFFC284BF27F0084798D /* PushNotificationPayload.apns */,
+				B27DDFF8284BF27F0084798D /* Preview Content */,
+			);
+			path = "iLottoNum WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B27DDFF8284BF27F0084798D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B27DDFF9284BF27F0084798D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */ = {
+		B27A2E9D25C79A630009C7C8 /* iLottNum Paid (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (iOS)" */;
+			buildConfigurationList = B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum Paid (iOS)" */;
 			buildPhases = (
 				B27A2E9A25C79A630009C7C8 /* Sources */,
 				B27A2E9B25C79A630009C7C8 /* Frameworks */,
@@ -166,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = "iLottNum (iOS)";
+			name = "iLottNum Paid (iOS)";
 			productName = "iLottNum2 (iOS)";
-			productReference = B27A2E9E25C79A630009C7C8 /* iLottNum.app */;
+			productReference = B27A2E9E25C79A630009C7C8 /* iLottNum Paid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */ = {
+		B27A2EA525C79A630009C7C8 /* iLottNum Paid (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (macOS)" */;
+			buildConfigurationList = B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum Paid (macOS)" */;
 			buildPhases = (
 				B27A2EA225C79A630009C7C8 /* Sources */,
 				B27A2EA325C79A630009C7C8 /* Frameworks */,
@@ -183,9 +289,9 @@
 			);
 			dependencies = (
 			);
-			name = "iLottNum (macOS)";
+			name = "iLottNum Paid (macOS)";
 			productName = "iLottNum2 (macOS)";
-			productReference = B27A2EA625C79A630009C7C8 /* iLottNum.app */;
+			productReference = B27A2EA625C79A630009C7C8 /* iLottNum Paid.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B27A2EAD25C79A630009C7C8 /* Tests iOS */ = {
@@ -224,14 +330,65 @@
 			productReference = B27A2EB925C79A630009C7C8 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B27DDFD8284BF27D0084798D /* iLottoNum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27DE007284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum" */;
+			buildPhases = (
+				B27DDFD7284BF27D0084798D /* Resources */,
+				B27DDFFF284BF27F0084798D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B27DDFDF284BF27D0084798D /* PBXTargetDependency */,
+			);
+			name = iLottoNum;
+			productName = iLottoNum;
+			productReference = B27DDFD9284BF27D0084798D /* iLottoNum.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B27DDFDB284BF27D0084798D /* iLottoNum WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27DE006284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum WatchKit App" */;
+			buildPhases = (
+				B27DDFDA284BF27D0084798D /* Resources */,
+				B27DE002284BF27F0084798D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B27DDFEA284BF27E0084798D /* PBXTargetDependency */,
+			);
+			name = "iLottoNum WatchKit App";
+			productName = "iLottoNum WatchKit App";
+			productReference = B27DDFDC284BF27D0084798D /* iLottoNum WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B27DDFE6284BF27E0084798D /* iLottoNum WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27DE005284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum WatchKit Extension" */;
+			buildPhases = (
+				B27DDFE3284BF27E0084798D /* Sources */,
+				B27DDFE4284BF27E0084798D /* Frameworks */,
+				B27DDFE5284BF27E0084798D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iLottoNum WatchKit Extension";
+			productName = "iLottoNum WatchKit Extension";
+			productReference = B27DDFE7284BF27E0084798D /* iLottoNum WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B27A2E9225C79A600009C7C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					B27A2E9D25C79A630009C7C8 = {
 						CreatedOnToolsVersion = 12.4;
@@ -247,9 +404,18 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = B27A2EA525C79A630009C7C8;
 					};
+					B27DDFD8284BF27D0084798D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B27DDFDB284BF27D0084798D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B27DDFE6284BF27E0084798D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
-			buildConfigurationList = B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum" */;
+			buildConfigurationList = B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum Paid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,10 +428,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */,
-				B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */,
+				B27A2E9D25C79A630009C7C8 /* iLottNum Paid (iOS) */,
+				B27A2EA525C79A630009C7C8 /* iLottNum Paid (macOS) */,
 				B27A2EAD25C79A630009C7C8 /* Tests iOS */,
 				B27A2EB825C79A630009C7C8 /* Tests macOS */,
+				B27DDFD8284BF27D0084798D /* iLottoNum */,
+				B27DDFDB284BF27D0084798D /* iLottoNum WatchKit App */,
+				B27DDFE6284BF27E0084798D /* iLottoNum WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +467,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27DDFD7284BF27D0084798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27DDFDA284BF27D0084798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27DDFE2284BF27E0084798D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B27DDFE5284BF27E0084798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27DDFFA284BF27F0084798D /* Preview Assets.xcassets in Resources */,
+				B27DDFF7284BF27F0084798D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,18 +531,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B27DDFE3284BF27E0084798D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27DDFF1284BF27E0084798D /* NotificationController.swift in Sources */,
+				B27DDFEF284BF27E0084798D /* ContentView.swift in Sources */,
+				B27DDFF5284BF27E0084798D /* ComplicationController.swift in Sources */,
+				B27DDFED284BF27E0084798D /* iLottNumApp.swift in Sources */,
+				B27DDFF3284BF27E0084798D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		B27A2EB025C79A630009C7C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B27A2E9D25C79A630009C7C8 /* iLottNum (iOS) */;
+			target = B27A2E9D25C79A630009C7C8 /* iLottNum Paid (iOS) */;
 			targetProxy = B27A2EAF25C79A630009C7C8 /* PBXContainerItemProxy */;
 		};
 		B27A2EBB25C79A630009C7C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B27A2EA525C79A630009C7C8 /* iLottNum (macOS) */;
+			target = B27A2EA525C79A630009C7C8 /* iLottNum Paid (macOS) */;
 			targetProxy = B27A2EBA25C79A630009C7C8 /* PBXContainerItemProxy */;
+		};
+		B27DDFDF284BF27D0084798D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B27DDFDB284BF27D0084798D /* iLottoNum WatchKit App */;
+			targetProxy = B27DDFDE284BF27D0084798D /* PBXContainerItemProxy */;
+		};
+		B27DDFEA284BF27E0084798D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B27DDFE6284BF27E0084798D /* iLottoNum WatchKit Extension */;
+			targetProxy = B27DDFE9284BF27E0084798D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -471,7 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -480,9 +695,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.ilottonumpaid;
-				PRODUCT_NAME = iLottNum;
+				PRODUCT_NAME = "iLottNum Paid";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -504,9 +719,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.ilottonumpaid;
-				PRODUCT_NAME = iLottNum;
+				PRODUCT_NAME = "iLottNum Paid";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,6 +735,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
@@ -532,7 +748,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum;
+				PRODUCT_NAME = "iLottNum Paid";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -544,6 +760,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JXRDDKQ33V;
@@ -556,7 +773,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottNum2;
-				PRODUCT_NAME = iLottNum;
+				PRODUCT_NAME = "iLottNum Paid";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -651,10 +868,161 @@
 			};
 			name = Release;
 		};
+		B27DDFFD284BF27F0084798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B27DDFFE284BF27F0084798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B27DE000284BF27F0084798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = iLottoNum_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "iLottoNum WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B27DE001284BF27F0084798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = iLottoNum_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "iLottoNum WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B27DE003284BF27F0084798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iLottoNum WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iLottoNum WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iLottoNum WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B27DE004284BF27F0084798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iLottoNum WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JXRDDKQ33V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iLottoNum WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "iLottoNum WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fekke.iLottoNum.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum" */ = {
+		B27A2E9525C79A600009C7C8 /* Build configuration list for PBXProject "iLottNum Paid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2EC625C79A630009C7C8 /* Debug */,
@@ -663,7 +1031,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (iOS)" */ = {
+		B27A2EC825C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum Paid (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2EC925C79A630009C7C8 /* Debug */,
@@ -672,7 +1040,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum (macOS)" */ = {
+		B27A2ECB25C79A630009C7C8 /* Build configuration list for PBXNativeTarget "iLottNum Paid (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27A2ECC25C79A630009C7C8 /* Debug */,
@@ -695,6 +1063,33 @@
 			buildConfigurations = (
 				B27A2ED225C79A630009C7C8 /* Debug */,
 				B27A2ED325C79A630009C7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27DE005284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27DE003284BF27F0084798D /* Debug */,
+				B27DE004284BF27F0084798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27DE006284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27DE000284BF27F0084798D /* Debug */,
+				B27DE001284BF27F0084798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27DE007284BF27F0084798D /* Build configuration list for PBXNativeTarget "iLottoNum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27DDFFD284BF27F0084798D /* Debug */,
+				B27DDFFE284BF27F0084798D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
